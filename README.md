@@ -10,7 +10,7 @@
 
 # Bonjour, je suis Donovan GROUT 👋
 
-Développeur web full stack, basé à Caen, je viens de passer mon titre professionnel **Développeur Web et Web Mobile** suite à ma formation O'Clock (2024-2025). 
+Développeur web full stack, basé à Caen, je viens de passer mon titre professionnel **Développeur Web et Web Mobile** suite à ma formation O'Clock (2024-2025).
 Je recherche de nouveaux défis : alternance en Concepteur Développeur d'Applications ou CDI en développement web, et je m'apprête également à lancer mon activité en tant que micro-entrepreneur.
 
 ## 🚀 À propos
@@ -35,48 +35,56 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 </div>
 
 ### 💻 Frontend
+
 - **HTML5, CSS3, Tailwind CSS**
 - **React, Zustand, EJS**
 - **Responsive Design**
 - **Conception : chartes graphiques, wireframes, maquettes graphiques**
 
 ### 🖥️ Backend
+
 - **Node.js, Express**
 - **API RESTful**
 - **PostgreSQL, Sequelize**
 - **Modélisation : MCD, MLD, MPD, dictionnaire de données**
 
 ### 🏗️ Architecture
+
 - **MVC**
 - **Approche modulaire**
 - **Séparation des responsabilités**
 
 ### 🧩 Qualité & bonnes pratiques
+
 - **DRY**
 - **Gestion d’état**
 - **Bonnes pratiques Git (branches, PR, code review)**
 
 ### 🔒 Sécurité
+
 - **JWT, sessions**
 - **Authentification/autorisation**
 - **Validation des entrées**
 - **Protections contre XSS, CSRF, injections SQL, CSP**
 
 ### ♿ Accessibilité
+
 - **WCAG**
 - **Balises sémantiques, ARIA**
 - **Navigation clavier**
 
 ### 🌱 Éco-conception
+
 - **Optimisation des ressources**
 - **Technologies légères**
 - **Réduction de l’empreinte carbone**
 
 ### 📅 Méthodologies
+
 - **Agile (Scrum, Kanban)**
 - **Veille CI/CD, veille TDD**
 
-## 🔭 En ce moment...
+## 🔭 En ce moment
 
 - **Je travaille sur** : le site internet du haras du Val Aubrée
 - **J’apprends** : TDD, CI/CD
@@ -86,7 +94,11 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 Je développe des applications web robustes, accessibles et respectueuses de l’environnement, et je suis en veille constante pour toujours améliorer la qualité de mon code.
 Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et explorez mes repositories pour découvrir mes réalisations.
 
+<!-- AUTO-UPDATE: LATEST-PROJECT-FR-START -->
+<!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
+
 ### [Portfolio](https://github.com/DonovanGROUT/CV)
+
 📄 **Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.  
 **Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
 ➡️ [Voir le projet](https://github.com/DonovanGROUT/CV)
@@ -94,7 +106,9 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 ---
 
 ### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
+
 ☕ **Site vitrine responsive** pour une boutique de café haut de gamme.  
+
 - Catalogue interactif, gestion produits, carte Leaflet, formulaire de contact, espace admin.  
 **Techs :** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS  
 ➡️ [Voir le projet](https://github.com/DonovanGROUT/O-Coffee)
@@ -115,6 +129,9 @@ En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DonovanGROUT&layout=compact" alt="Top Langs" width="400"/>
 </div>
+
+<!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
+<!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 </details>
 
@@ -148,28 +165,33 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 </div>
 
 ### 💻 Frontend
+
 - **HTML5, CSS3, Tailwind CSS**
 - **React, Zustand, EJS**
 - **Responsive Design**
 - **Design: graphic charters, wireframes, graphic models**
 
 ### 🖥️ Backend
+
 - **Node.js, Express**
 - **RESTful API**
 - **PostgreSQL, Sequelize**
 - **Modeling: Data Conceptual Model, Logical/Physical Data Models, data dictionary**
 
 ### 🏗️ Architecture
+
 - **MVC**
 - **Modular approach**
 - **Separation of concerns**
 
 ### 🧩 Code quality & best practices
+
 - **DRY**
 - **State management**
 - **Git best practices (branches, PR, code review)**
 
 ### 🔒 Security
+
 - **JWT, sessions**
 - **Authentication/authorization**
 - **Input validation**
@@ -177,20 +199,23 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 - **CSP**
 
 ### ♿ Accessibility
+
 - **WCAG**
 - **Semantic tags, ARIA**
 - **Keyboard navigation**
 
 ### 🌱 Eco-design
+
 - **Resource optimization**
 - **Lightweight technologies**
 - **Reducing carbon footprint**
 
 ### 📅 Methodologies
+
 - **Agile (Scrum, Kanban)**
 - **Watch : CI/CD, TDD**
 
-## 🔭 Currently...
+## 🔭 Currently
 
 - **I'm working on**: the Val Aubrée stud farm website
 - **Learning**: TDD, CI/CD
@@ -200,7 +225,11 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 I develop robust, accessible and environmentally-friendly web applications, and I'm constantly on the lookout for ways to improve the quality of my code.
 Check out my pinned projects below (more coming soon), and explore my repositories to discover my achievments.
 
+<!-- AUTO-UPDATE: LATEST-PROJECT-EN-START -->
+<!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
+
 ### [Portfolio](https://github.com/DonovanGROUT/CV)
+
 📄 **Professional website** showcasing my background, skills, and interactive resume.  
 **Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
 ➡️ [See project](https://github.com/DonovanGROUT/CV)
@@ -208,7 +237,9 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 ---
 
 ### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
+
 ☕ **Responsive showcase site** for a high-end coffee shop.  
+
 - Interactive catalog, product management, Leaflet map, contact form, admin area.  
 **Techs:** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS  
 ➡️ [See project](https://github.com/DonovanGROUT/O-Coffee)
@@ -229,5 +260,8 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DonovanGROUT&layout=compact" alt="Top Langs" width="400"/>
 </div>
+
+<!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
+<!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 </details>

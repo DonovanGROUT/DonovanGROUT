@@ -1,0 +1,167 @@
+name: 🔄 Auto-update README
+
+on:
+  schedule:
+    # Exécuter toutes les 3 heures
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+    # Permet l'exécution manuelle
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+      
+    - name: Update README with latest project
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        USERNAME: ${{ github.repository_owner }}
+      run: |
+        # Variables pour l'horodatage
+        export TIMESTAMP=$(date '+%d/%m/%Y %H:%M UTC')
+        
+        # Récupérer le dernier repository public (non forké)
+        echo "🔍 Récupération du dernier repository public..."
+        LATEST_REPO=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+          "https://api.github.com/users/$USERNAME/repos?sort=created&direction=desc&per_page=20&type=public" | \
+          jq -r 'map(select(.fork == false and .private == false)) | .[0]')
+        
+        if [ "$LATEST_REPO" = "null" ]; then
+          echo "⚠️ Aucun repository public trouvé"
+          export REPO_NAME="Aucun projet public"
+          export REPO_URL="https://github.com/$USERNAME"
+          export REPO_DESC="Aucun repository public trouvé"
+          export REPO_LANG="N/A"
+          export REPO_STARS="0"
+          export REPO_FORKS="0"
+          export REPO_DATE="N/A"
+        else
+          # Extraire les informations du projet
+          export REPO_NAME=$(echo "$LATEST_REPO" | jq -r '.name // "Repository"')
+          export REPO_URL=$(echo "$LATEST_REPO" | jq -r '.html_url // "https://github.com/'$USERNAME'"')
+          export REPO_DESC=$(echo "$LATEST_REPO" | jq -r '.description // "Aucune description disponible"')
+          export REPO_LANG=$(echo "$LATEST_REPO" | jq -r '.language // "Non spécifié"')
+          export REPO_STARS=$(echo "$LATEST_REPO" | jq -r '.stargazers_count // 0')
+          export REPO_FORKS=$(echo "$LATEST_REPO" | jq -r '.forks_count // 0')
+          export REPO_DATE=$(echo "$LATEST_REPO" | jq -r '.created_at' | cut -d'T' -f1)
+          
+          echo "✅ Repository trouvé: $REPO_NAME"
+        fi
+        
+        # Sauvegarder le README original
+        cp README.md README.md.backup
+        
+        # Créer le script Python comme dans le workflow
+        cat > update_readme.py << 'EOF'
+        import re
+        import sys
+        import os
+
+        def update_section(content, start_marker, end_marker, new_content):
+            pattern = f'({re.escape(start_marker)})(.*?)({re.escape(end_marker)})'
+            replacement = f'\\1\n{new_content}\n\\3'
+            return re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+        # Lire le README
+        with open('README.md', 'r', encoding='utf-8') as f:
+            readme_content = f.read()
+
+        # Récupérer les variables d'environnement
+        repo_name = os.getenv('REPO_NAME', 'Unknown')
+        repo_url = os.getenv('REPO_URL', 'https://github.com')
+        repo_desc = os.getenv('REPO_DESC', 'No description')
+        repo_lang = os.getenv('REPO_LANG', 'Unknown')
+        repo_stars = os.getenv('REPO_STARS', '0')
+        repo_forks = os.getenv('REPO_FORKS', '0')
+        repo_date = os.getenv('REPO_DATE', 'Unknown')
+        timestamp = os.getenv('TIMESTAMP', 'Unknown')
+
+        # Contenu pour la section française
+        fr_content = f"""### 🔥 Mon dernier projet public
+
+        [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]({repo_url})
+
+        **[{repo_name}]({repo_url})** - Créé le {repo_date}
+
+        {repo_desc}
+
+        **Langage principal:** {repo_lang} | **⭐ Stars:** {repo_stars} | **🔀 Forks:** {repo_forks}"""
+
+        # Contenu pour la section anglaise  
+        en_content = f"""### 🔥 My latest public project
+
+        [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]({repo_url})
+
+        **[{repo_name}]({repo_url})** - Created on {repo_date}
+
+        {repo_desc}
+
+        **Main language:** {repo_lang} | **⭐ Stars:** {repo_stars} | **🔀 Forks:** {repo_forks}"""
+
+        # Contenu pour les timestamps
+        fr_timestamp = f"""---
+        *🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : {timestamp}*"""
+
+        en_timestamp = f"""---
+        *🔄 This profile is automatically updated - Last update: {timestamp}*"""
+
+        # Mettre à jour chaque section
+        print("🔄 Mise à jour de la section française du projet...")
+        readme_content = update_section(readme_content, 
+            '<!-- AUTO-UPDATE: LATEST-PROJECT-FR-START -->',
+            '<!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->',
+            fr_content)
+
+        print("🔄 Mise à jour de la section anglaise du projet...")
+        readme_content = update_section(readme_content,
+            '<!-- AUTO-UPDATE: LATEST-PROJECT-EN-START -->', 
+            '<!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->',
+            en_content)
+
+        print("🔄 Mise à jour du timestamp français...")
+        readme_content = update_section(readme_content,
+            '<!-- AUTO-UPDATE: TIMESTAMP-FR-START -->',
+            '<!-- AUTO-UPDATE: TIMESTAMP-FR-END -->', 
+            fr_timestamp)
+
+        print("🔄 Mise à jour du timestamp anglais...")
+        readme_content = update_section(readme_content,
+            '<!-- AUTO-UPDATE: TIMESTAMP-EN-START -->',
+            '<!-- AUTO-UPDATE: TIMESTAMP-EN-END -->',
+            en_timestamp)
+
+        # Écrire le nouveau README
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(readme_content)
+
+        print(f'✅ README mis à jour avec le projet: {repo_name}')
+        print(f'📊 Timestamp: {timestamp}')
+        EOF
+        
+        # Exécuter le script Python
+        echo "🐍 Exécution du script Python de mise à jour..."
+        python3 update_readme.py
+        
+        # Nettoyer
+        rm -f update_readme.py
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        if git diff --staged --quiet; then
+          echo "ℹ️ Aucun changement détecté dans le README"
+        else
+          git commit -m "🔄 Auto-update README with latest project: $(date '+%Y-%m-%d %H:%M')"
+          git push
+          echo "✅ README mis à jour et poussé vers GitHub"
+        fi
