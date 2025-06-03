@@ -2,6 +2,12 @@
   <img src="https://raw.githubusercontent.com/DonovanGROUT/DonovanGROUT/main/banniere_README_GitHub.webp" alt="Bannière Donovan GROUT" style="max-width: 100%; height: auto;" />
 </div>
 
+**ℹ️ Ce profil est bilingue : cliquez sur “Français” ou “English” ci-dessous pour afficher ou masquer la langue de votre choix.**  
+**ℹ️ This profile is bilingual : click on “Français” or “English” below to show or hide the language of your choice.**
+
+<details open>
+  <summary>Français</summary>
+
 # Bonjour, je suis Donovan GROUT 👋
 
 Développeur web full stack, basé à Caen, je viens de passer mon titre professionnel **Développeur Web et Web Mobile** suite à ma formation O'Clock (2024-2025). 
@@ -70,12 +76,10 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 - **Agile (Scrum, Kanban)**
 - **Veille CI/CD, veille TDD**
 
-
 ## 🔭 En ce moment...
 
 - **Je travaille sur** : le site internet du haras du Val Aubrée
 - **J’apprends** : TDD, CI/CD
-
 
 ## 🌱 Projets & Objectifs
 
@@ -84,7 +88,7 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 ### [Portfolio](https://github.com/DonovanGROUT/CV)
 📄 **Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.  
-**Techs :** HTML5, CSS3, JavaScript, Node.js, Express, EJS, PostgreSQL  
+**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
 ➡️ [Voir le projet](https://github.com/DonovanGROUT/CV)
 
 ---
@@ -112,17 +116,118 @@ En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DonovanGROUT&layout=compact" alt="Top Langs" width="400"/>
 </div>
 
-<!--
-**DonovanGROUT/DonovanGROUT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+</details>
 
-Here are some ideas to get you started:
+<details>
+  <summary>English</summary>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# Hello, I'm Donovan GROUT 👋
+
+Full stack web developer, based in Caen, I've just passed my **Web and Web Mobile Developer** professional title following my O'Clock training (2024-2025).  
+I'm looking for new challenges: work-study as an Application Developer Designer or a permanent position in web development, and I'm also getting ready to launch my business as a micro-entrepreneur.
+
+## 🚀 About
+
+Passionate about creating high-performance, accessible and eco-designed web solutions, I place great importance on code quality, user experience, security and protection of personal data.
+
+## 🛠️ Technical skills
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="64" alt="HTML"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="64" alt="CSS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64" alt="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="64" alt="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="64" alt="React"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="64" alt="Tailwind CSS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="64" alt="Node.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="64" alt="PostgreSQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" width="64" alt="Sequelize"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="64" alt="Docker"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="64" alt="Git"/>
+  <img src="https://img.icons8.com/office/64/000000/github.png" width="64" alt="GitHub"/>
+</div>
+
+### 💻 Frontend
+- **HTML5, CSS3, Tailwind CSS**
+- **React, Zustand, EJS**
+- **Responsive Design**
+- **Design: graphic charters, wireframes, graphic models**
+
+### 🖥️ Backend
+- **Node.js, Express**
+- **RESTful API**
+- **PostgreSQL, Sequelize**
+- **Modeling: Data Conceptual Model, Logical/Physical Data Models, data dictionary**
+
+### 🏗️ Architecture
+- **MVC**
+- **Modular approach**
+- **Separation of concerns**
+
+### 🧩 Code quality & best practices
+- **DRY**
+- **State management**
+- **Git best practices (branches, PR, code review)**
+
+### 🔒 Security
+- **JWT, sessions**
+- **Authentication/authorization**
+- **Input validation**
+- **Protection against XSS, CSRF, SQL injections**
+- **CSP**
+
+### ♿ Accessibility
+- **WCAG**
+- **Semantic tags, ARIA**
+- **Keyboard navigation**
+
+### 🌱 Eco-design
+- **Resource optimization**
+- **Lightweight technologies**
+- **Reducing carbon footprint**
+
+### 📅 Methodologies
+- **Agile (Scrum, Kanban)**
+- **Watch : CI/CD, TDD**
+
+## 🔭 Currently...
+
+- **I'm working on**: the Val Aubrée stud farm website
+- **Learning**: TDD, CI/CD
+
+## 🌱 Projects & Goals
+
+I develop robust, accessible and environmentally-friendly web applications, and I'm constantly on the lookout for ways to improve the quality of my code.
+Check out my pinned projects below (more coming soon), and explore my repositories to discover my achievments.
+
+### [Portfolio](https://github.com/DonovanGROUT/CV)
+📄 **Professional website** showcasing my background, skills, and interactive resume.  
+**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
+➡️ [See project](https://github.com/DonovanGROUT/CV)
+
+---
+
+### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
+☕ **Responsive showcase site** for a high-end coffee shop.  
+- Interactive catalog, product management, Leaflet map, contact form, admin area.  
+**Techs:** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS  
+➡️ [See project](https://github.com/DonovanGROUT/O-Coffee)
+
+## 📫 Contact me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/donovan-grout)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:donovan.grout.pro@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-222222?style=for-the-badge&logo=vercel&logoColor=white)](https://sitepro-donovangrout.netlify.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT)
+
+## 🎯 Interests
+
+Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fantasy and science fiction stories ✍️.
+
+## 📊 My GitHub stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DonovanGROUT&layout=compact" alt="Top Langs" width="400"/>
+</div>
+
+</details>
