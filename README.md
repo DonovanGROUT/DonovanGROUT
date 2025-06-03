@@ -95,6 +95,15 @@ Je développe des applications web robustes, accessibles et respectueuses de l�
 Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et explorez mes repositories pour découvrir mes réalisations.
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-START -->
+### 🔥 Mon dernier projet public
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/DonovanGROUT)
+
+**[DonovanGROUT](https://github.com/DonovanGROUT/DonovanGROUT)** - Créé le 2025-06-02
+
+Mon profil professionnel GitHub
+
+**Langage principal:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 ### [Portfolio](https://github.com/DonovanGROUT/CV)
@@ -131,6 +140,8 @@ En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍
 </div>
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
+---
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 03/06/2025 18:43 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 </details>
@@ -226,6 +237,15 @@ I develop robust, accessible and environmentally-friendly web applications, and 
 Check out my pinned projects below (more coming soon), and explore my repositories to discover my achievments.
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-START -->
+### 🔥 My latest public project
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/DonovanGROUT)
+
+**[DonovanGROUT](https://github.com/DonovanGROUT/DonovanGROUT)** - Created on 2025-06-02
+
+Mon profil professionnel GitHub
+
+**Main language:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 ### [Portfolio](https://github.com/DonovanGROUT/CV)
@@ -262,6 +282,8 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 </div>
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
+---
+*🔄 This profile is automatically updated - Last update: 03/06/2025 18:43 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 </details>
