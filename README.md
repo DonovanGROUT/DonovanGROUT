@@ -15,7 +15,7 @@ Je recherche de nouveaux défis : alternance en Concepteur Développeur d'Applic
 
 ## 🚀 À propos
 
-Passionné par la création de solutions web performantes, accessibles et éco-conçues, j’accorde une grande importance à la qualité du code, à l’expérience utilisateur et à la collaboration.
+Passionné par la création de solutions web performantes, accessibles et éco-conçues, j’accorde une grande importance à la qualité du code, à l’expérience utilisateur, à la sécurité et à la protection des données personnelles.
 
 ## 🛠️ Compétences techniques
 
