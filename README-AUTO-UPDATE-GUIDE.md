@@ -35,6 +35,13 @@ get_deployment_link() {
   
   >&2 echo "🔍 Recherche du lien de déploiement pour $repo_name..."
   
+  # Cas spécial pour le profil GitHub
+  if [ "$repo_name" = "DonovanGROUT" ]; then
+    >&2 echo "   🌟 Cas spécial détecté: Profil GitHub"
+    echo "https://github.com/$username"
+    return 0
+  fi
+  
   # Essayer différents noms de fichiers README
   for readme_file in "README.md" "readme.md" "README.MD" "readme.MD"; do
     readme_url="https://raw.githubusercontent.com/$username/$repo_name/main/$readme_file"
@@ -130,7 +137,7 @@ Découvrez l'application en ligne : [Démo live](https://votre-projet-demo.com)
 
 Les liens GitHub Pages (*.github.io/*) sont automatiquement reconnus comme liens de déploiement.
 
-Si votre lien de déploiement est lui-même un lien GitHub (comme dans le cas de votre profil), utilisez une des méthodes ci-dessus pour le marquer explicitement.
+Un cas spécial a été implémenté pour le profil GitHub : lorsque le repository est "DonovanGROUT", le lien de déploiement est automatiquement défini sur l'URL du profil GitHub.
 
 ## 🔧 Détection des technologies utilisées
 
