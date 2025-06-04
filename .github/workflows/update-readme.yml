@@ -33,7 +33,7 @@ jobs:
           local username="$1"
           local repo_name="$2"
           
-          echo "🔍 Recherche du lien de déploiement pour $repo_name..."
+          >&2 echo "🔍 Recherche du lien de déploiement pour $repo_name..."
           
           # Essayer différents noms de fichiers README
           for readme_file in "README.md" "readme.md" "README.MD" "readme.MD"; do
@@ -47,7 +47,7 @@ jobs:
               for pattern in "DEPLOY-LINK-START" "DEPLOYMENT-URL-START" "DEMO-LINK-START" "LIVE-DEMO-START" "PROJECT-URL-START"; do
                 if deploy_link=$(echo "$readme_content" | grep -oP "<!-- $pattern -->(.*?)<!-- .*?-END -->" | sed 's/<!-- [^>]* -->//g' | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
                   if [[ -n "$deploy_link" ]]; then
-                    echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
+                    >&2 echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
                     echo "$deploy_link"
                     return 0
                   fi
@@ -58,7 +58,7 @@ jobs:
               for keyword in "démo" "demo" "live" "deployment" "déploiement" "deployed" "déployé" "site" "app" "application"; do
                 if deploy_link=$(echo "$readme_content" | grep -i -B1 -A2 "$keyword" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
                   if [[ -n "$deploy_link" ]]; then
-                    echo "   🔎 Lien trouvé via mot-clé '$keyword': $deploy_link"
+                    >&2 echo "   🔎 Lien trouvé via mot-clé '$keyword': $deploy_link"
                     echo "$deploy_link"
                     return 0
                   fi
@@ -67,7 +67,7 @@ jobs:
               
               # PRIORITÉ 3 : Accepter les liens GitHub spécifiques (ex: pages GitHub)
               if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+\.github\.io/[^[:space:]")\`]+'); then
-                echo "   🔎 Lien GitHub Pages trouvé: $deploy_link"
+                >&2 echo "   🔎 Lien GitHub Pages trouvé: $deploy_link"
                 echo "$deploy_link"
                 return 0
               fi
@@ -75,7 +75,7 @@ jobs:
               # PRIORITÉ 4 : Premier lien externe non GitHub repository
               if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
                 if [[ -n "$deploy_link" ]]; then
-                  echo "   📎 Premier lien externe trouvé: $deploy_link"
+                  >&2 echo "   📎 Premier lien externe trouvé: $deploy_link"
                   echo "$deploy_link"
                   return 0
                 fi
@@ -83,7 +83,7 @@ jobs:
               
               # PRIORITÉ 5 : Accepter n'importe quel lien si rien d'autre n'est trouvé
               if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
-                echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
+                >&2 echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
                 echo "$deploy_link"
                 return 0
               fi
@@ -93,6 +93,61 @@ jobs:
           echo ""
         }
         
+        # Fonction pour récupérer les technologies utilisées dans le projet avec leurs pourcentages
+        get_tech_stack() {
+          local username="$1"
+          local repo_name="$2"
+          
+          >&2 echo "🧰 Recherche des technologies utilisées pour $repo_name..."
+          
+          # Récupérer les langages via l'API
+          languages_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$username/$repo_name/languages")
+          
+          # Vérifier si des langages ont été trouvés
+          if [ -n "$languages_json" ] && [ "$languages_json" != "{}" ] && [ "$languages_json" != "null" ]; then
+            # Calcul des pourcentages
+            total_bytes=$(echo "$languages_json" | jq -r 'add')
+            
+            if [ "$total_bytes" != "null" ] && [ "$total_bytes" -gt 0 ]; then
+              # Formater les langages avec leurs pourcentages (top 3 seulement)
+              formatted_langs=$(echo "$languages_json" | jq -r 'to_entries | sort_by(-.value) | 
+                map("\(.key) \((.value * 100 / '"$total_bytes"' | floor / 10 * 10)?"%")") | 
+                [.[0:3][] | select(.)] | join(", ")' | sed 's/%"/%/g')
+              
+              if [ -n "$formatted_langs" ]; then
+                >&2 echo "   💻 Technologies détectées via API avec pourcentages: $formatted_langs"
+                echo "$formatted_langs"
+                return 0
+              fi
+            fi
+          fi
+          
+          >&2 echo "   ⚠️ Aucune technologie détectée via l'API, recherche dans README..."
+          
+          # Essayer différents noms de fichiers README
+          for readme_file in "README.md" "readme.md" "README.MD" "readme.MD"; do
+            readme_url="https://raw.githubusercontent.com/$username/$repo_name/main/$readme_file"
+            
+            # Télécharger le README
+            readme_content=$(curl -s "$readme_url")
+            
+            if [[ -n "$readme_content" ]]; then
+              # Chercher des patterns de technologies dans le README
+              tech_pattern="[Tt]ech[s]?:.*|[Tt]echnologies:.*|[Ss]tack:.*|[Dd]éveloppé avec:.*|[Dd]eveloped with:.*|[Bb]uilt with:.*"
+              techs=$(echo "$readme_content" | grep -oP "$tech_pattern" | head -1 | sed -E 's/[Tt]ech[s]?:|[Tt]echnologies:|[Ss]tack:|[Dd]éveloppé avec:|[Dd]eveloped with:|[Bb]uilt with://g' | xargs)
+              
+              if [[ -n "$techs" ]]; then
+                >&2 echo "   📦 Technologies trouvées dans README: $techs"
+                echo "$techs"
+                return 0
+              fi
+            fi
+          done
+          
+          echo "Non spécifié"
+        }
+
         # Récupérer le dernier repository public (non forké)
         echo "🔍 Récupération du dernier repository public..."
         LATEST_REPO=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
@@ -104,7 +159,7 @@ jobs:
           export REPO_NAME="Aucun projet public"
           export REPO_URL="https://github.com/$USERNAME"
           export REPO_DESC="Aucun repository public trouvé"
-          export REPO_LANG="N/A"
+          export REPO_TECHS="Non spécifié"
           export REPO_STARS="0"
           export REPO_FORKS="0"
           export REPO_DATE="N/A"
@@ -114,10 +169,12 @@ jobs:
           export REPO_NAME=$(echo "$LATEST_REPO" | jq -r '.name // "Repository"')
           export REPO_URL=$(echo "$LATEST_REPO" | jq -r '.html_url // "https://github.com/'$USERNAME'"')
           export REPO_DESC=$(echo "$LATEST_REPO" | jq -r '.description // "Aucune description disponible"')
-          export REPO_LANG=$(echo "$LATEST_REPO" | jq -r '.language // "Non spécifié"')
           export REPO_STARS=$(echo "$LATEST_REPO" | jq -r '.stargazers_count // 0')
           export REPO_FORKS=$(echo "$LATEST_REPO" | jq -r '.forks_count // 0')
           export REPO_DATE=$(echo "$LATEST_REPO" | jq -r '.created_at' | cut -d'T' -f1)
+          
+          # Récupérer les technologies utilisées
+          export REPO_TECHS=$(get_tech_stack "$USERNAME" "$REPO_NAME")
           
           # Récupérer le lien de déploiement s'il existe
           export DEPLOY_LINK=$(get_deployment_link "$USERNAME" "$REPO_NAME")
@@ -140,7 +197,7 @@ jobs:
             replacement = f'\\1\n{new_content}\n\\3'
             return re.sub(pattern, replacement, content, flags=re.DOTALL)
         
-        def format_stats_line(lang, stars, forks, is_french=True):
+        def format_stats_line(techs, stars, forks, is_french=True):
             # Conversion des variables pour vérification
             try:
                 stars_int = int(stars)
@@ -150,10 +207,10 @@ jobs:
                 forks_int = 0
             
             # Préfixe de la ligne selon la langue
-            prefix = "**Langage principal:**" if is_french else "**Main language:**"
+            prefix = "**Techs:**" if is_french else "**Techs:**"
             
             # Construction de la ligne de statistiques
-            stats_line = f"{prefix} {lang}"
+            stats_line = f"{prefix} {techs}"
             
             # Ajout des stars uniquement si > 0
             if stars_int > 0:
@@ -173,7 +230,7 @@ jobs:
         repo_name = os.getenv('REPO_NAME', 'Unknown')
         repo_url = os.getenv('REPO_URL', 'https://github.com')
         repo_desc = os.getenv('REPO_DESC', 'No description')
-        repo_lang = os.getenv('REPO_LANG', 'Unknown')
+        repo_techs = os.getenv('REPO_TECHS', 'Non spécifié')
         repo_stars = os.getenv('REPO_STARS', '0')
         repo_forks = os.getenv('REPO_FORKS', '0')
         repo_date = os.getenv('REPO_DATE', 'Unknown')
@@ -181,8 +238,8 @@ jobs:
         deploy_link = os.getenv('DEPLOY_LINK', '')
         
         # Formatage conditionnel des statistiques
-        fr_stats_line = format_stats_line(repo_lang, repo_stars, repo_forks, is_french=True)
-        en_stats_line = format_stats_line(repo_lang, repo_stars, repo_forks, is_french=False)
+        fr_stats_line = format_stats_line(repo_techs, repo_stars, repo_forks, is_french=True)
+        en_stats_line = format_stats_line(repo_techs, repo_stars, repo_forks, is_french=False)
         
         # Lien de déploiement conditionnel
         deploy_fr = f"\n\n➡️ [Voir le projet déployé]({deploy_link})" if deploy_link else ""
