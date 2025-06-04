@@ -33,7 +33,7 @@ get_deployment_link() {
   local username="$1"
   local repo_name="$2"
   
-  echo "🔍 Recherche du lien de déploiement pour $repo_name..."
+  >&2 echo "🔍 Recherche du lien de déploiement pour $repo_name..."
   
   # Essayer différents noms de fichiers README
   for readme_file in "README.md" "readme.md" "README.MD" "readme.MD"; do
@@ -47,7 +47,7 @@ get_deployment_link() {
       for pattern in "DEPLOY-LINK-START" "DEPLOYMENT-URL-START" "DEMO-LINK-START" "LIVE-DEMO-START" "PROJECT-URL-START"; do
         if deploy_link=$(echo "$readme_content" | grep -oP "<!-- $pattern -->(.*?)<!-- .*?-END -->" | sed 's/<!-- [^>]* -->//g' | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
           if [[ -n "$deploy_link" ]]; then
-            echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
+            >&2 echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
             echo "$deploy_link"
             return 0
           fi
@@ -58,7 +58,7 @@ get_deployment_link() {
       for keyword in "démo" "demo" "live" "deployment" "déploiement" "deployed" "déployé" "site" "app" "application"; do
         if deploy_link=$(echo "$readme_content" | grep -i -B1 -A2 "$keyword" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
           if [[ -n "$deploy_link" ]]; then
-            echo "   🔎 Lien trouvé via mot-clé '$keyword': $deploy_link"
+            >&2 echo "   🔎 Lien trouvé via mot-clé '$keyword': $deploy_link"
             echo "$deploy_link"
             return 0
           fi
@@ -67,7 +67,7 @@ get_deployment_link() {
       
       # PRIORITÉ 3 : Accepter les liens GitHub spécifiques (ex: pages GitHub)
       if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+\.github\.io/[^[:space:]")\`]+'); then
-        echo "   🔎 Lien GitHub Pages trouvé: $deploy_link"
+        >&2 echo "   🔎 Lien GitHub Pages trouvé: $deploy_link"
         echo "$deploy_link"
         return 0
       fi
@@ -75,7 +75,7 @@ get_deployment_link() {
       # PRIORITÉ 4 : Premier lien externe non GitHub repository
       if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
         if [[ -n "$deploy_link" ]]; then
-          echo "   📎 Premier lien externe trouvé: $deploy_link"
+          >&2 echo "   📎 Premier lien externe trouvé: $deploy_link"
           echo "$deploy_link"
           return 0
         fi
@@ -83,7 +83,7 @@ get_deployment_link() {
       
       # PRIORITÉ 5 : Accepter n'importe quel lien si rien d'autre n'est trouvé
       if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
-        echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
+        >&2 echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
         echo "$deploy_link"
         return 0
       fi
@@ -132,12 +132,74 @@ Les liens GitHub Pages (*.github.io/*) sont automatiquement reconnus comme liens
 
 Si votre lien de déploiement est lui-même un lien GitHub (comme dans le cas de votre profil), utilisez une des méthodes ci-dessus pour le marquer explicitement.
 
+## 🔧 Détection des technologies utilisées
+
+La fonction `get_tech_stack()` détecte les technologies utilisées dans le projet :
+
+```bash
+get_tech_stack() {
+  local username="$1"
+  local repo_name="$2"
+  
+  >&2 echo "🧰 Recherche des technologies utilisées pour $repo_name..."
+  
+  # Cas spécial pour le profil GitHub
+  if [ "$repo_name" = "DonovanGROUT" ]; then
+    >&2 echo "   🌟 Cas spécial détecté: Profil GitHub"
+    echo "Markdown, YAML, GitHub Actions"
+    return 0
+  fi
+  
+  # Récupérer les langages via l'API
+  languages_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+    "https://api.github.com/repos/$username/$repo_name/languages")
+  
+  # Vérifier si des langages ont été trouvés
+  if [ -n "$languages_json" ] && [ "$languages_json" != "{}" ] && [ "$languages_json" != "null" ]; then
+    # Lister les langages (top 3 seulement)
+    formatted_langs=$(echo "$languages_json" | jq -r 'keys | [.[0:3][] | select(.)] | join(", ")')
+    
+    if [ -n "$formatted_langs" ]; then
+        >&2 echo "   💻 Technologies détectées via API: $formatted_langs"
+        echo "$formatted_langs"
+        return 0
+    fi
+  fi
+  
+  >&2 echo "   ⚠️ Aucune technologie détectée via l'API, recherche dans README..."
+  
+  # Essayer différents noms de fichiers README
+  for readme_file in "README.md" "readme.md" "README.MD" "readme.MD"; do
+    readme_url="https://raw.githubusercontent.com/$username/$repo_name/main/$readme_file"
+    
+    # Télécharger le README
+    readme_content=$(curl -s "$readme_url")
+    
+    if [[ -n "$readme_content" ]]; then
+      # Chercher des patterns de technologies dans le README
+      tech_pattern="[Tt]ech[s]?:.*|[Tt]echnologies:.*|[Ss]tack:.*|[Dd]éveloppé avec:.*|[Dd]eveloped with:.*|[Bb]uilt with:.*"
+      techs=$(echo "$readme_content" | grep -oP "$tech_pattern" | head -1 | sed -E 's/[Tt]ech[s]?:|[Tt]echnologies:|[Ss]tack:|[Dd]éveloppé avec:|[Dd]eveloped with:|[Bb]uilt with://g' | xargs)
+      
+      if [[ -n "$techs" ]]; then
+        >&2 echo "   📦 Technologies trouvées dans README: $techs"
+        echo "$techs"
+        return 0
+      fi
+    fi
+  done
+  
+  echo "Non spécifié"
+}
+```
+
+Cette fonction utilise l'API GitHub pour récupérer les technologies utilisées dans le projet. Si l'API ne retourne pas de données, elle cherche dans le README du projet.
+
 ## ⭐ Affichage conditionnel des stars/forks
 
 Les stars et forks ne s'affichent que s'ils sont supérieurs à 0 :
 
 ```python
-def format_stats_line(lang, stars, forks, is_french=True):
+def format_stats_line(techs, stars, forks, is_french=True):
     # Conversion des variables pour vérification
     try:
         stars_int = int(stars)
@@ -147,10 +209,10 @@ def format_stats_line(lang, stars, forks, is_french=True):
         forks_int = 0
     
     # Préfixe de la ligne selon la langue
-    prefix = "**Langage principal:**" if is_french else "**Main language:**"
+    prefix = "**Techs:**" if is_french else "**Techs:**"
     
     # Construction de la ligne de statistiques
-    stats_line = f"{prefix} {lang}"
+    stats_line = f"{prefix} {techs}"
     
     # Ajout des stars uniquement si > 0
     if stars_int > 0:

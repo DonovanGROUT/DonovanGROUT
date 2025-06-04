@@ -93,12 +93,19 @@ jobs:
           echo ""
         }
         
-        # Fonction pour récupérer les technologies utilisées dans le projet avec leurs pourcentages
+        # Fonction pour récupérer les technologies utilisées dans le projet
         get_tech_stack() {
           local username="$1"
           local repo_name="$2"
           
           >&2 echo "🧰 Recherche des technologies utilisées pour $repo_name..."
+          
+          # Cas spécial pour le profil GitHub
+          if [ "$repo_name" = "DonovanGROUT" ]; then
+            >&2 echo "   🌟 Cas spécial détecté: Profil GitHub"
+            echo "Markdown, YAML, GitHub Actions"
+            return 0
+          fi
           
           # Récupérer les langages via l'API
           languages_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
@@ -106,20 +113,13 @@ jobs:
           
           # Vérifier si des langages ont été trouvés
           if [ -n "$languages_json" ] && [ "$languages_json" != "{}" ] && [ "$languages_json" != "null" ]; then
-            # Calcul des pourcentages
-            total_bytes=$(echo "$languages_json" | jq -r 'add')
+            # Lister les langages (top 3 seulement)
+            formatted_langs=$(echo "$languages_json" | jq -r 'keys | [.[0:3][] | select(.)] | join(", ")')
             
-            if [ "$total_bytes" != "null" ] && [ "$total_bytes" -gt 0 ]; then
-              # Formater les langages avec leurs pourcentages (top 3 seulement)
-              formatted_langs=$(echo "$languages_json" | jq -r 'to_entries | sort_by(-.value) | 
-                map("\(.key) \((.value * 100 / '"$total_bytes"' | floor / 10 * 10)?"%")") | 
-                [.[0:3][] | select(.)] | join(", ")' | sed 's/%"/%/g')
-              
-              if [ -n "$formatted_langs" ]; then
-                >&2 echo "   💻 Technologies détectées via API avec pourcentages: $formatted_langs"
+            if [ -n "$formatted_langs" ]; then
+                >&2 echo "   💻 Technologies détectées via API: $formatted_langs"
                 echo "$formatted_langs"
                 return 0
-              fi
             fi
           fi
           
