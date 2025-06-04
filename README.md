@@ -104,23 +104,35 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 Mon profil professionnel GitHub
 
 **Langage principal:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
+
+➡️ [Voir le projet déployé](https://github.com/DonovanGROUT)
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
-### [Portfolio](https://github.com/DonovanGROUT/CV)
+### 🎨 Mes autres projets épinglés
 
-📄 **Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.  
+#### [Portfolio](https://github.com/DonovanGROUT/CV)
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
+
+📄 **Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.
+
 **Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
-➡️ [Voir le projet](https://github.com/DonovanGROUT/CV)
+
+➡️ [Voir le projet déployé](https://sitepro-donovangrout.netlify.app/)
 
 ---
 
-### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
+#### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
 
-☕ **Site vitrine responsive** pour une boutique de café haut de gamme.  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-- Catalogue interactif, gestion produits, carte Leaflet, formulaire de contact, espace admin.  
-**Techs :** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS  
-➡️ [Voir le projet](https://github.com/DonovanGROUT/O-Coffee)
+☕ **Site vitrine responsive** pour une boutique de café haut de gamme.
+
+Catalogue interactif, gestion produits, carte Leaflet, formulaire de contact, espace admin.
+
+**Techs:** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS
+
+➡️ [Voir le projet déployé](https://ocoffee-qg6r.onrender.com/)
 
 ## 📫 Me contacter
 
@@ -248,21 +260,31 @@ Mon profil professionnel GitHub
 **Main language:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
-### [Portfolio](https://github.com/DonovanGROUT/CV)
+### 🎨 My other pinned projects
 
-📄 **Professional website** showcasing my background, skills, and interactive resume.  
+#### [Portfolio](https://github.com/DonovanGROUT/CV)
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
+
+📄 **Professional website** showcasing my background, skills, and interactive resume.
+
 **Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
-➡️ [See project](https://github.com/DonovanGROUT/CV)
+
+➡️ [See deployed project](https://sitepro-donovangrout.netlify.app/)
 
 ---
 
-### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
+#### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
 
-☕ **Responsive showcase site** for a high-end coffee shop.  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-- Interactive catalog, product management, Leaflet map, contact form, admin area.  
-**Techs:** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS  
-➡️ [See project](https://github.com/DonovanGROUT/O-Coffee)
+☕ **Responsive showcase site** for a high-end coffee shop.
+
+Interactive catalog, product management, Leaflet map, contact form, admin area.
+
+**Techs:** Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript, EJS
+
+➡️ [See deployed project](https://ocoffee-qg6r.onrender.com/)
 
 ## 📫 Contact me
 
