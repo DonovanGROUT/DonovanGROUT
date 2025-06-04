@@ -2,20 +2,24 @@
   <img src="https://raw.githubusercontent.com/DonovanGROUT/DonovanGROUT/main/banniere_README_GitHub.webp" alt="Bannière Donovan GROUT" style="max-width: 100%; height: auto;" />
 </div>
 
-**ℹ️ Ce profil est bilingue : cliquez sur “Français” ou “English” ci-dessous pour afficher ou masquer la langue de votre choix.**  
-**ℹ️ This profile is bilingual : click on “Français” or “English” below to show or hide the language of your choice.**
+<div align="center">
+  <h3>🌍 Choisissez votre langue / Choose your language</h3>
+  <a href="#version-française" style="display: inline-block; margin: 8px;">🇫🇷 Version Française</a> |
+  <a href="#english-version" style="display: inline-block; margin: 8px;">🇬🇧 English Version</a>
+</div>
 
-<details open>
-  <summary>Français</summary>
+<a id="version-française"></a>
 
 # Bonjour, je suis Donovan GROUT 👋
+
+<div align="right"><a href="#english-version">🇬🇧 Switch to English</a></div>
 
 Développeur web full stack, basé à Caen, je viens de passer mon titre professionnel **Développeur Web et Web Mobile** suite à ma formation O'Clock (2024-2025).
 Je recherche de nouveaux défis : alternance en Concepteur Développeur d'Applications ou CDI en développement web, et je m'apprête également à lancer mon activité en tant que micro-entrepreneur.
 
 ## 🚀 À propos
 
-Passionné par la création de solutions web performantes, accessibles et éco-conçues, j’accorde une grande importance à la qualité du code, à l’expérience utilisateur, à la sécurité et à la protection des données personnelles.
+Passionné par la création de solutions web performantes, accessibles et éco-conçues, j'accorde une grande importance à la qualité du code, à l'expérience utilisateur, à la sécurité et à la protection des données personnelles.
 
 ## 🛠️ Compétences techniques
 
@@ -39,14 +43,14 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 - **HTML5, CSS3, Tailwind CSS**
 - **React, Zustand, EJS**
 - **Responsive Design**
-- **Conception : chartes graphiques, wireframes, maquettes graphiques**
+- **Conception : chartes graphiques, wireframes, maquettes graphiques**
 
 ### 🖥️ Backend
 
 - **Node.js, Express**
 - **API RESTful**
 - **PostgreSQL, Sequelize**
-- **Modélisation : MCD, MLD, MPD, dictionnaire de données**
+- **Modélisation : MCD, MLD, MPD, dictionnaire de données**
 
 ### 🏗️ Architecture
 
@@ -57,7 +61,7 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 ### 🧩 Qualité & bonnes pratiques
 
 - **DRY**
-- **Gestion d’état**
+- **Gestion d'état**
 - **Bonnes pratiques Git (branches, PR, code review)**
 
 ### 🔒 Sécurité
@@ -77,7 +81,7 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 
 - **Optimisation des ressources**
 - **Technologies légères**
-- **Réduction de l’empreinte carbone**
+- **Réduction de l'empreinte carbone**
 
 ### 📅 Méthodologies
 
@@ -87,11 +91,11 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 ## 🔭 En ce moment
 
 - **Je travaille sur** : le site internet du haras du Val Aubrée
-- **J’apprends** : TDD, CI/CD
+- **J'apprends** : TDD, CI/CD
 
 ## 🌱 Projets & Objectifs
 
-Je développe des applications web robustes, accessibles et respectueuses de l’environnement, et je suis en veille constante pour toujours améliorer la qualité de mon code.
+Je développe des applications web robustes, accessibles et respectueuses de l'environnement, et je suis en veille constante pour toujours améliorer la qualité de mon code.
 Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et explorez mes repositories pour découvrir mes réalisations.
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-START -->
@@ -133,7 +137,7 @@ Catalogue interactif, gestion produits, carte Leaflet, formulaire de contact, es
 
 ## 🎯 Passions
 
-En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍♂️, et j’aime écrire des récits fantastiques et de science-fiction ✍️.
+En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍♂️, et j'aime écrire des récits fantastiques et de science-fiction ✍️.
 
 ## 📊 Mes statistiques GitHub
 
@@ -145,12 +149,18 @@ En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
-</details>
+<div align="center">
+  <a href="#version-française">⬆️ Retour en haut</a> |
+  <a href="#english-version">🇬🇧 Passer à l'anglais</a>
+</div>
 
-<details>
-  <summary>English</summary>
+---
+
+<a id="english-version"></a>
 
 # Hello, I'm Donovan GROUT 👋
+
+<div align="right"><a href="#version-française">🇫🇷 Passer en Français</a></div>
 
 Full stack web developer, based in Caen, I've just passed my **Web and Web Mobile Developer** professional title following my O'Clock training (2024-2025).  
 I'm looking for new challenges: work-study as an Application Developer Designer or a permanent position in web development, and I'm also getting ready to launch my business as a micro-entrepreneur.
@@ -288,4 +298,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
-</details>
+<div align="center">
+  <a href="#english-version">⬆️ Back to top</a> |
+  <a href="#version-française">🇫🇷 Switch to French</a>
+</div>
