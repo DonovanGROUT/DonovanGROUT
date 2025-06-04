@@ -103,9 +103,11 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 Mon profil professionnel GitHub
 
-**Langage principal:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
+**Langage principal:** Non spécifié | **⭐ Stars:** 1
 
-➡️ [Voir le projet déployé](https://github.com/DonovanGROUT)
+➡️ [Voir le projet déployé](🔍 Recherche du lien de déploiement pour DonovanGROUT...
+   🔎 Lien trouvé via mot-clé 'deployed': https://sitepro-donovangrout.netlify.app/
+https://sitepro-donovangrout.netlify.app/)
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets épinglés
@@ -153,7 +155,7 @@ En dehors du code, je m’entraîne régulièrement à la course à pied 🏃‍
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 04/06/2025 09:17 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 04/06/2025 10:20 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 </details>
@@ -257,7 +259,11 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 
 Mon profil professionnel GitHub
 
-**Main language:** Non spécifié | **⭐ Stars:** 0 | **🔀 Forks:** 0
+**Main language:** Non spécifié | **⭐ Stars:** 1
+
+➡️ [See deployed project](🔍 Recherche du lien de déploiement pour DonovanGROUT...
+   🔎 Lien trouvé via mot-clé 'deployed': https://sitepro-donovangrout.netlify.app/
+https://sitepro-donovangrout.netlify.app/)
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 ### 🎨 My other pinned projects
@@ -305,7 +311,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 04/06/2025 09:17 UTC*
+*🔄 This profile is automatically updated - Last update: 04/06/2025 10:20 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 </details>
