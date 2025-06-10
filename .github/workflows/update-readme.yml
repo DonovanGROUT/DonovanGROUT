@@ -79,18 +79,9 @@ jobs:
                 return 0
               fi
               
-              # PRIORITÉ 4 : Premier lien externe non GitHub repository
-              if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
-                if [[ -n "$deploy_link" ]]; then
-                  >&2 echo "   📎 Premier lien externe trouvé: $deploy_link"
-                  echo "$deploy_link"
-                  return 0
-                fi
-              fi
-              
-              # PRIORITÉ 5 : Accepter n'importe quel lien si rien d'autre n'est trouvé
-              if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
-                >&2 echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
+              # PRIORITÉ 4 : Liens de déploiement populaires (Netlify, Vercel, Heroku, etc.)
+              if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+\.(netlify\.app|vercel\.app|herokuapp\.com|railway\.app|render\.com)'); then
+                >&2 echo "   🚀 Lien de plateforme de déploiement trouvé: $deploy_link"
                 echo "$deploy_link"
                 return 0
               fi

@@ -79,18 +79,9 @@ get_deployment_link() {
         return 0
       fi
       
-      # PRIORITÉ 4 : Premier lien externe non GitHub repository
-      if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | grep -v 'github.com/[^/]+/[^/]+$' | head -1); then
-        if [[ -n "$deploy_link" ]]; then
-          >&2 echo "   📎 Premier lien externe trouvé: $deploy_link"
-          echo "$deploy_link"
-          return 0
-        fi
-      fi
-      
-      # PRIORITÉ 5 : Accepter n'importe quel lien si rien d'autre n'est trouvé
-      if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
-        >&2 echo "   ⚠️ Aucun lien spécifique trouvé, utilisation du premier lien: $deploy_link"
+      # PRIORITÉ 4 : Liens de déploiement populaires (Netlify, Vercel, Heroku, etc.)
+      if deploy_link=$(echo "$readme_content" | grep -oE 'https?://[^[:space:]")\`]+\.(netlify\.app|vercel\.app|herokuapp\.com|railway\.app|render\.com)'); then
+        >&2 echo "   🚀 Lien de plateforme de déploiement trouvé: $deploy_link"
         echo "$deploy_link"
         return 0
       fi
@@ -138,6 +129,26 @@ Découvrez l'application en ligne : [Démo live](https://votre-projet-demo.com)
 Les liens GitHub Pages (*.github.io/*) sont automatiquement reconnus comme liens de déploiement.
 
 Un cas spécial a été implémenté pour le profil GitHub : lorsque le repository est "DonovanGROUT", le lien de déploiement est automatiquement défini sur l'URL du profil GitHub.
+
+#### 4️⃣ Pour les projets non encore déployés
+
+Si votre projet n'est pas encore déployé, utilisez des balises de commentaire vides pour éviter les faux positifs :
+
+```markdown
+<!-- DEPLOY-LINK-START -->
+<!-- Pas encore déployé -->
+<!-- DEPLOY-LINK-END -->
+```
+
+Ou indiquez explicitement l'état :
+
+```markdown
+<!-- DEPLOY-LINK-START -->
+<!-- En cours de développement - Déploiement prévu -->
+<!-- DEPLOY-LINK-END -->
+```
+
+Cette approche garantit qu'aucun lien ne sera pris par erreur comme lien de déploiement.
 
 ## 🔧 Détection des technologies utilisées
 
