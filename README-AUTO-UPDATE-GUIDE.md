@@ -52,12 +52,21 @@ get_deployment_link() {
     if [[ -n "$readme_content" ]]; then
       # PRIORITÉ 1 : Chercher les balises de commentaire dédiées
       for pattern in "DEPLOY-LINK-START" "DEPLOYMENT-URL-START" "DEMO-LINK-START" "LIVE-DEMO-START" "PROJECT-URL-START"; do
-        if deploy_link=$(echo "$readme_content" | grep -oP "<!-- $pattern -->(.*?)<!-- .*?-END -->" | sed 's/<!-- [^>]* -->//g' | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
-          if [[ -n "$deploy_link" ]]; then
-            >&2 echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
-            echo "$deploy_link"
-            return 0
+        # Vérifier d'abord si les balises existent
+        if echo "$readme_content" | grep -q "<!-- $pattern -->"; then
+          >&2 echo "   🏷️ Balises $pattern détectées"
+          # Chercher un lien dans ces balises
+          if deploy_link=$(echo "$readme_content" | grep -oP "<!-- $pattern -->(.*?)<!-- .*?-END -->" | sed 's/<!-- [^>]* -->//g' | grep -oE 'https?://[^[:space:]")\`]+' | head -1); then
+            if [[ -n "$deploy_link" ]]; then
+              >&2 echo "   🎯 Lien trouvé via balise $pattern: $deploy_link"
+              echo "$deploy_link"
+              return 0
+            fi
           fi
+          # Si les balises existent mais ne contiennent pas de lien, on s'arrête ici
+          >&2 echo "   ✋ Balises $pattern trouvées mais pas de lien de déploiement défini"
+          echo ""
+          return 0
         fi
       done
       
@@ -93,6 +102,8 @@ get_deployment_link() {
 ```
 
 Cette approche hiérarchisée permet une détection beaucoup plus intelligente et fiable des liens.
+
+**🔑 Point clé :** Si des balises de commentaire de déploiement sont détectées dans un README, le système s'arrête là et ne cherche pas d'autres liens, même si les balises ne contiennent pas de lien valide. Cela évite les faux positifs.
 
 ### Bonnes pratiques pour structurer vos README
 
