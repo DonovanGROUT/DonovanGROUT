@@ -90,7 +90,7 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 
 ## 🔭 En ce moment
 
-- **Je travaille sur** : le site internet du haras du Val Aubrée
+- **Je travaille sur** : le site internet du haras du Val Aubrée et la refonte de mon portfolio
 - **J'apprends** : TDD, CI/CD
 
 ## 🌱 Projets & Objectifs
