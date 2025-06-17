@@ -161,6 +161,12 @@ jobs:
           "https://api.github.com/users/$USERNAME/repos?sort=created&direction=desc&per_page=20&type=public" | \
           jq -r 'map(select(.fork == false and .private == false)) | .[0]')
         
+        # Récupérer le dernier repository modifié (non forké, excluant le profil GitHub)
+        echo "🔄 Récupération du dernier repository modifié..."
+        LATEST_UPDATED_REPO=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+          "https://api.github.com/users/$USERNAME/repos?sort=updated&direction=desc&per_page=50&type=public" | \
+          jq -r 'map(select(.fork == false and .private == false and .name != "DonovanGROUT")) | .[0]')
+        
         if [ "$LATEST_REPO" = "null" ]; then
           echo "⚠️ Aucun repository public trouvé"
           export REPO_NAME="Aucun projet public"
@@ -188,6 +194,36 @@ jobs:
           
           echo "✅ Repository trouvé: $REPO_NAME"
           echo "🔗 Lien de déploiement trouvé: ${DEPLOY_LINK:-Aucun}"
+        fi
+        
+        # Traitement du dernier repository modifié
+        if [ "$LATEST_UPDATED_REPO" = "null" ]; then
+          echo "⚠️ Aucun repository modifié trouvé"
+          export UPDATED_REPO_NAME="Aucun projet modifié"
+          export UPDATED_REPO_URL="https://github.com/$USERNAME"
+          export UPDATED_REPO_DESC="Aucun repository modifié trouvé"
+          export UPDATED_REPO_TECHS="Non spécifié"
+          export UPDATED_REPO_STARS="0"
+          export UPDATED_REPO_FORKS="0"
+          export UPDATED_REPO_DATE="N/A"
+          export UPDATED_DEPLOY_LINK=""
+        else
+          # Extraire les informations du projet modifié
+          export UPDATED_REPO_NAME=$(echo "$LATEST_UPDATED_REPO" | jq -r '.name // "Repository"')
+          export UPDATED_REPO_URL=$(echo "$LATEST_UPDATED_REPO" | jq -r '.html_url // "https://github.com/'$USERNAME'"')
+          export UPDATED_REPO_DESC=$(echo "$LATEST_UPDATED_REPO" | jq -r '.description // "Aucune description disponible"')
+          export UPDATED_REPO_STARS=$(echo "$LATEST_UPDATED_REPO" | jq -r '.stargazers_count // 0')
+          export UPDATED_REPO_FORKS=$(echo "$LATEST_UPDATED_REPO" | jq -r '.forks_count // 0')
+          export UPDATED_REPO_DATE=$(echo "$LATEST_UPDATED_REPO" | jq -r '.updated_at' | cut -d'T' -f1)
+          
+          # Récupérer les technologies utilisées
+          export UPDATED_REPO_TECHS=$(get_tech_stack "$USERNAME" "$UPDATED_REPO_NAME")
+          
+          # Récupérer le lien de déploiement s'il existe
+          export UPDATED_DEPLOY_LINK=$(get_deployment_link "$USERNAME" "$UPDATED_REPO_NAME")
+          
+          echo "✅ Repository modifié trouvé: $UPDATED_REPO_NAME"
+          echo "🔗 Lien de déploiement trouvé: ${UPDATED_DEPLOY_LINK:-Aucun}"
         fi
         
         # Sauvegarder le README original
@@ -244,13 +280,31 @@ jobs:
         timestamp = os.getenv('TIMESTAMP', 'Unknown')
         deploy_link = os.getenv('DEPLOY_LINK', '')
         
+        # Variables pour le projet modifié
+        updated_repo_name = os.getenv('UPDATED_REPO_NAME', 'Unknown')
+        updated_repo_url = os.getenv('UPDATED_REPO_URL', 'https://github.com')
+        updated_repo_desc = os.getenv('UPDATED_REPO_DESC', 'No description')
+        updated_repo_techs = os.getenv('UPDATED_REPO_TECHS', 'Non spécifié')
+        updated_repo_stars = os.getenv('UPDATED_REPO_STARS', '0')
+        updated_repo_forks = os.getenv('UPDATED_REPO_FORKS', '0')
+        updated_repo_date = os.getenv('UPDATED_REPO_DATE', 'Unknown')
+        updated_deploy_link = os.getenv('UPDATED_DEPLOY_LINK', '')
+        
         # Formatage conditionnel des statistiques
         fr_stats_line = format_stats_line(repo_techs, repo_stars, repo_forks, is_french=True)
         en_stats_line = format_stats_line(repo_techs, repo_stars, repo_forks, is_french=False)
         
+        # Formatage conditionnel des statistiques pour le projet modifié
+        updated_fr_stats_line = format_stats_line(updated_repo_techs, updated_repo_stars, updated_repo_forks, is_french=True)
+        updated_en_stats_line = format_stats_line(updated_repo_techs, updated_repo_stars, updated_repo_forks, is_french=False)
+        
         # Lien de déploiement conditionnel
         deploy_fr = f"\n\n➡️ [Voir le projet déployé]({deploy_link})" if deploy_link else ""
         deploy_en = f"\n\n➡️ [See deployed project]({deploy_link})" if deploy_link else ""
+        
+        # Lien de déploiement conditionnel pour le projet modifié
+        updated_deploy_fr = f"\n\n➡️ [Voir le projet déployé]({updated_deploy_link})" if updated_deploy_link else ""
+        updated_deploy_en = f"\n\n➡️ [See deployed project]({updated_deploy_link})" if updated_deploy_link else ""
 
         # Contenu pour la section française
         fr_content = f"""### 🔥 Mon dernier projet public
@@ -274,6 +328,28 @@ jobs:
 
         {en_stats_line}{deploy_en}"""
 
+        # Contenu pour la section du projet modifié (français)
+        updated_fr_content = f"""### 🛠️ Mon projet le plus récemment mis à jour
+
+        [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]({updated_repo_url})
+
+        **[{updated_repo_name}]({updated_repo_url})** - Mis à jour le {updated_repo_date}
+
+        {updated_repo_desc}
+
+        {updated_fr_stats_line}{updated_deploy_fr}"""
+
+        # Contenu pour la section du projet modifié (anglais)
+        updated_en_content = f"""### 🛠️ My most recently updated project
+
+        [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]({updated_repo_url})
+
+        **[{updated_repo_name}]({updated_repo_url})** - Updated on {updated_repo_date}
+
+        {updated_repo_desc}
+
+        {updated_en_stats_line}{updated_deploy_en}"""
+
         # Contenu pour les timestamps
         fr_timestamp = f"""---
         *🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : {timestamp}*"""
@@ -294,6 +370,18 @@ jobs:
             '<!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->',
             en_content)
 
+        print("🔄 Mise à jour de la section française du projet modifié...")
+        readme_content = update_section(readme_content,
+            '<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->',
+            '<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->',
+            updated_fr_content)
+
+        print("🔄 Mise à jour de la section anglaise du projet modifié...")
+        readme_content = update_section(readme_content,
+            '<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->',
+            '<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->',
+            updated_en_content)
+
         print("🔄 Mise à jour du timestamp français...")
         readme_content = update_section(readme_content,
             '<!-- AUTO-UPDATE: TIMESTAMP-FR-START -->',
@@ -310,7 +398,8 @@ jobs:
         with open('README.md', 'w', encoding='utf-8') as f:
             f.write(readme_content)
 
-        print(f'✅ README mis à jour avec le projet: {repo_name}')
+        print(f'✅ README mis à jour avec le dernier projet: {repo_name}')
+        print(f'✅ README mis à jour avec le projet modifié: {updated_repo_name}')
         print(f'📊 Timestamp: {timestamp}')
         EOF
         
@@ -329,7 +418,7 @@ jobs:
         if git diff --staged --quiet; then
           echo "ℹ️ Aucun changement détecté dans le README"
         else
-          git commit -m "🔄 Auto-update README with latest project: $(date '+%Y-%m-%d %H:%M')"
+          git commit -m "🔄 Auto-update README with latest projects: $(date '+%Y-%m-%d %H:%M')"
           git push
           echo "✅ README mis à jour et poussé vers GitHub"
         fi

@@ -7,17 +7,19 @@ Ce document explique le fonctionnement du système de mise à jour automatique d
 - Récupération intelligente des liens de déploiement depuis les README des projets
 - Affichage conditionnel des stars/forks (uniquement si > 0)
 - Harmonisation du style des projets
+- Affichage du dernier projet créé et du dernier projet modifié
 
 ## 🔄 Fonctionnement général
 
 Le workflow GitHub Actions exécute les étapes suivantes toutes les 3 heures :
 
 1. Récupère le dernier repository public créé
-2. Extrait ses informations (nom, description, langage, etc.)
-3. Recherche intelligemment un lien de déploiement dans son README
-4. Formate les statistiques de manière conditionnelle
-5. Met à jour les sections du README principal avec ces informations
-6. Commit et pousse les changements
+2. Récupère le dernier repository public modifié (en excluant le profil GitHub)
+3. Extrait leurs informations (nom, description, langage, etc.)
+4. Recherche intelligemment un lien de déploiement dans leurs README
+5. Formate les statistiques de manière conditionnelle
+6. Met à jour les sections du README principal avec ces informations
+7. Commit et pousse les changements
 
 ## 🔍 Recherche intelligente des liens de déploiement
 
@@ -272,6 +274,14 @@ def format_stats_line(techs, stars, forks, is_french=True):
 ... Contenu généré automatiquement ...
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
+... Contenu généré automatiquement ...
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
+
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
+... Contenu généré automatiquement ...
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
+
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ... Horodatage généré automatiquement ...
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
@@ -280,6 +290,24 @@ def format_stats_line(techs, stars, forks, is_french=True):
 ... Horodatage généré automatiquement ...
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 ```
+
+## 🆕 Nouvelles sections automatiques
+
+### 🔥 Dernier projet créé
+
+Cette section affiche le repository public le plus récemment **créé** (non forké).
+
+### 🛠️ Dernier projet modifié
+
+Cette section affiche le repository public le plus récemment **modifié** (non forké), en excluant automatiquement le repository de profil GitHub (`DonovanGROUT`) pour éviter la pollution par les mises à jour automatiques toutes les 3 heures.
+
+**Critères d'exclusion :**
+
+- Repositories forkés
+- Repositories privés  
+- Repository de profil GitHub (`DonovanGROUT`)
+
+Cette approche permet de mettre en avant vos projets réellement actifs sans bruit de fond.
 
 ## 📝 Résumé : Comment organiser vos projets pour une détection optimale
 

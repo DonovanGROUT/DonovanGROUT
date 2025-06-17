@@ -102,6 +102,10 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
+
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
+
 ### 🎨 Mes autres projets épinglés
 
 #### [Portfolio](https://github.com/DonovanGROUT/CV)
@@ -250,6 +254,10 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-START -->
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
+
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
+
+<!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned projects
 
