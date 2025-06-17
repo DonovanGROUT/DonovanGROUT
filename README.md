@@ -108,6 +108,14 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 ### 🎨 Mes autres projets épinglés
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/portfolio-v2)
+
+**[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Créé le 2025-06-09
+
+Portfolio avec Next.js, TypeScript, TDD et CI/CD (en construction)
+
+**Techs:** HTML5, CSS3, JavaScript, TypeScript, Next.js, Shell
+
 #### [Portfolio](https://github.com/DonovanGROUT/CV)
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
@@ -260,6 +268,12 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned projects
+
+**[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Created on 2025-06-09
+
+Portfolio with Next.js, TypeScript, TDD and CI/CD (under construction)
+
+**Techs:** HTML5, CSS3, JavaScript, TypeScript, Next.js, Shell
 
 #### [Portfolio](https://github.com/DonovanGROUT/CV)
 
