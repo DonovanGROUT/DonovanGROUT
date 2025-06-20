@@ -90,8 +90,8 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 
 ## 🔭 En ce moment
 
-- **Je travaille sur** : le site internet du haras du Val Aubrée
-- **J'apprends** : TDD, CI/CD
+- **Je travaille sur** : le site internet du haras du Val Aubrée, la refonte de mon portfolio avec Next.js en TDD et avec un pipeline CI/CD, et Medisys, une application de gestion médicale simple pour apprendre à maîtriser Symfony et VueJS.
+- **J'apprends** : TDD, CI/CD, Symfony et VueJS
 
 ## 🌱 Projets & Objectifs
 
@@ -251,8 +251,8 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 
 ## 🔭 Currently
 
-- **I'm working on**: the Val Aubrée stud farm website
-- **Learning**: TDD, CI/CD
+- **I'm working on**: the Val Aubrée stud farm website, the redesign of my portfolio with Next.js in TDD and with a CI/CD pipeline, and Medisys, a simple medical management application to learn how to master Symfony and VueJS.
+- **I'm learning**: TDD, CI/CD, Symfony and VueJS
 
 ## 🌱 Projects & Goals
 
