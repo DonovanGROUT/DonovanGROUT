@@ -99,11 +99,27 @@ Je développe des applications web robustes, accessibles et respectueuses de l'e
 Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et explorez mes repositories pour découvrir mes réalisations.
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-START -->
+### 🔥 Mon dernier projet public
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Créé le 2025-06-19
+
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+
+**Techs:** CSS, JavaScript, PHP
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
+### 🛠️ Mon projet le plus récemment mis à jour
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2025-06-20
+
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+
+**Techs:** CSS, JavaScript, PHP
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets épinglés
@@ -158,7 +174,8 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 </div>
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
-
+---
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 20/06/2025 15:16 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -260,11 +277,27 @@ I develop robust, accessible and environmentally-friendly web applications, and 
 Check out my pinned projects below (more coming soon), and explore my repositories to discover my achievments.
 
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-START -->
+### 🔥 My latest public project
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Created on 2025-06-19
+
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+
+**Techs:** CSS, JavaScript, PHP
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
+### 🛠️ My most recently updated project
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2025-06-20
+
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+
+**Techs:** CSS, JavaScript, PHP
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned projects
@@ -317,7 +350,8 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 </div>
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
-
+---
+*🔄 This profile is automatically updated - Last update: 20/06/2025 15:16 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
