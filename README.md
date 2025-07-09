@@ -115,7 +115,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2025-06-30
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2025-07-09
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
@@ -175,7 +175,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 09/07/2025 15:18 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 09/07/2025 18:23 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -293,7 +293,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2025-06-30
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2025-07-09
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
@@ -351,7 +351,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 09/07/2025 15:18 UTC*
+*🔄 This profile is automatically updated - Last update: 09/07/2025 18:23 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
