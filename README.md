@@ -14,7 +14,7 @@
 
 <div align="right"><a href="#english-version">🇬🇧 Switch to English</a></div>
 
-Développeur web full stack, basé à Caen, je viens de passer mon titre professionnel **Développeur Web et Web Mobile** suite à ma formation O'Clock (2024-2025).
+Développeur web full stack, basé à Caen, j'ai obtenu mon titre professionnel **Développeur Web et Web Mobile** en mai 2025 avec les félicitations du jury suite à ma formation O'Clock (2024-2025).
 Je recherche de nouveaux défis : alternance en Concepteur Développeur d'Applications ou CDI en développement web, et je m'apprête également à lancer mon activité en tant que micro-entrepreneur.
 
 ## 🚀 À propos
@@ -191,7 +191,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <div align="right"><a href="#version-française">🇫🇷 Passer en Français</a></div>
 
-Full stack web developer, based in Caen, I've just passed my **Web and Web Mobile Developer** professional title following my O'Clock training (2024-2025).  
+Full stack web developer, based in Caen, I've obtained my **Web and Web Mobile Developer** professional title in May 2025, following my O'Clock training (2024-2025).  
 I'm looking for new challenges: work-study as an Application Developer Designer or a permanent position in web development, and I'm also getting ready to launch my business as a micro-entrepreneur.
 
 ## 🚀 About
