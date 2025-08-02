@@ -40,16 +40,18 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 
 ### 💻 Frontend
 
-- **HTML5, CSS3, Tailwind CSS**
+- **HTML5, CSS3, Tailwind CSS, JQuery**
 - **React, Zustand, EJS**
+- **VueJS, Pinia**
 - **Responsive Design**
 - **Conception : chartes graphiques, wireframes, maquettes graphiques**
 
-### 🖥️ Backend
+### 🖥️ Backend/Base de données
 
 - **Node.js, Express**
 - **API RESTful**
 - **PostgreSQL, Sequelize**
+- **PHP, Symfony**
 - **Modélisation : MCD, MLD, MPD, dictionnaire de données**
 
 ### 🏗️ Architecture
@@ -217,15 +219,17 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 
 ### 💻 Frontend
 
-- **HTML5, CSS3, Tailwind CSS**
+- **HTML5, CSS3, Tailwind CSS, JQuery**
 - **React, Zustand, EJS**
+- **VueJS, Pinia**
 - **Responsive Design**
 - **Design: graphic charters, wireframes, graphic models**
 
-### 🖥️ Backend
+### 🖥️ Backend/Database
 
 - **Node.js, Express**
 - **RESTful API**
+- **PHP, Symfony**
 - **PostgreSQL, Sequelize**
 - **Modeling: Data Conceptual Model, Logical/Physical Data Models, data dictionary**
 
