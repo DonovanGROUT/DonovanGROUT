@@ -115,13 +115,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/portfolio-v2)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2025-07-09
+**[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Mis à jour le 2025-08-08
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Portfolio avec Next.js, TypeScript, TDD et CI/CD
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, JavaScript, Shell
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets épinglés
@@ -177,7 +177,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 08/08/2025 12:36 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 08/08/2025 15:18 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -295,13 +295,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/portfolio-v2)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2025-07-09
+**[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Updated on 2025-08-08
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Portfolio avec Next.js, TypeScript, TDD et CI/CD
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, JavaScript, Shell
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned projects
@@ -355,7 +355,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 08/08/2025 12:36 UTC*
+*🔄 This profile is automatically updated - Last update: 08/08/2025 15:18 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
