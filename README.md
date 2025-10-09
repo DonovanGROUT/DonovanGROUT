@@ -15,7 +15,7 @@
 <div align="right"><a href="#english-version">🇬🇧 Switch to English</a></div>
 
 Développeur web full stack, basé à Caen, j'ai obtenu mon titre professionnel **Développeur Web et Web Mobile** en mai 2025 avec les félicitations du jury suite à ma formation O'Clock (2024-2025).
-Je recherche de nouveaux défis : alternance en Concepteur Développeur d'Applications ou CDI en développement web, et je m'apprête également à lancer mon activité en tant que micro-entrepreneur.
+De nouveaux défis en cours : recherche d'un CDI en développement web, et préparation du lancement de mon activité en tant que micro-entrepreneur freelance.
 
 ## 🚀 À propos
 
