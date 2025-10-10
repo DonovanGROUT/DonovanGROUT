@@ -117,7 +117,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2025-10-09
+**[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2025-10-10
 
 Aucune description disponible
 
@@ -177,7 +177,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 06:23 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 09:17 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -297,7 +297,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2025-10-09
+**[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2025-10-10
 
 Aucune description disponible
 
@@ -355,7 +355,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 10/10/2025 06:23 UTC*
+*🔄 This profile is automatically updated - Last update: 10/10/2025 09:17 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
