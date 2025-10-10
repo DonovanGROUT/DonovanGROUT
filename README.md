@@ -36,64 +36,62 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="64" alt="Docker"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="64" alt="Git"/>
   <img src="https://img.icons8.com/office/64/000000/github.png" width="64" alt="GitHub"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="64" alt="Bootstrap"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="64" alt="jQuery"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="64" alt="Symfony"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="64" alt="VS Code"/>
 </div>
 
 ### 💻 Frontend
-
-- **HTML5, CSS3, Tailwind CSS, JQuery**
+- **HTML5, CSS3, Bootstrap, Tailwind CSS, JQuery**
 - **React, Zustand, EJS**
 - **VueJS, Pinia**
-- **Responsive Design**
-- **Conception : chartes graphiques, wireframes, maquettes graphiques**
+- **Responsive Design, UI/UX**
+- **Conception graphique : chartes, wireframes, maquettes**
 
 ### 🖥️ Backend/Base de données
-
-- **Node.js, Express**
-- **API RESTful**
-- **PostgreSQL, Sequelize**
-- **PHP, Symfony**
+- **PHP, Symfony, Node.js, Express, API RESTful**
+- **MySQL, PostgreSQL, Sequelize**
 - **Modélisation : MCD, MLD, MPD, dictionnaire de données**
 
 ### 🏗️ Architecture
-
 - **MVC**
 - **Approche modulaire**
 - **Séparation des responsabilités**
 
 ### 🧩 Qualité & bonnes pratiques
-
 - **DRY**
 - **Gestion d'état**
 - **Bonnes pratiques Git (branches, PR, code review)**
+- **Accessibilité (WCAG, ARIA)**
+- **Qualité web (Opquast, score 900/1000)**
+
+### 🔧 Outils & Méthodologies
+- **Git / GitHub, VS Code, Docker, GitHub Actions**
+- **TDD, CI/CD, Méthodologie Agile (Scrum, Kanban)**
 
 ### 🔒 Sécurité
-
 - **JWT, sessions**
 - **Authentification/autorisation**
 - **Validation des entrées**
-- **Protections contre XSS, CSRF, injections SQL, CSP**
+- **Protections contre XSS, CSRF, injections SQL**
+- **CSP**
+- **Formation sécurité informatique ANSSI (2024)**
 
 ### ♿ Accessibilité
-
 - **WCAG**
 - **Balises sémantiques, ARIA**
 - **Navigation clavier**
 
 ### 🌱 Éco-conception
-
 - **Optimisation des ressources**
 - **Technologies légères**
 - **Réduction de l'empreinte carbone**
 
-### 📅 Méthodologies
-
-- **Agile (Scrum, Kanban)**
-- **Veille CI/CD, veille TDD**
-
 ## 🔭 En ce moment
 
-- **Je travaille sur** : le site internet du haras du Val Aubrée, la refonte de mon portfolio avec Next.js en TDD et avec un pipeline CI/CD, et Medisys, une application de gestion médicale simple pour apprendre à maîtriser Symfony et VueJS.
-- **J'apprends** : TDD, CI/CD, Symfony et VueJS
+- **Je travaille sur** : la refonte de mon portfolio avec Next.js en TDD et avec un pipeline CI/CD, Medisys, une application de gestion médicale simple pour apprendre à maîtriser Symfony et VueJS et la mise en place d'une stack freelance automatisée avec n8n.
+- **J'apprends** : TDD, CI/CD, Symfony et VueJS, n8n.
 
 ## 🌱 Projets & Objectifs
 
@@ -109,7 +107,7 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** HTML, CSS, TypeScript, PHP, Vue.js, Symfony
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
@@ -119,13 +117,14 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2025-10-10
 
-Aucune description disponible
+**Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery, CI/CD Netlify
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
-### 🎨 Mes autres projets épinglés
+### 🎨 Mes autres projets publics épinglés
 
+#### Portfolio V2 (en cours)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/portfolio-v2)
 
 **[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Créé le 2025-06-09
@@ -134,15 +133,30 @@ Portfolio avec Next.js, TypeScript, TDD et CI/CD (en construction)
 
 **Techs:** HTML5, CSS3, JavaScript, TypeScript, Next.js, Shell
 
-#### [Portfolio](https://github.com/DonovanGROUT/CV)
+-- --
+
+#### GreenRoots
+
+🌱 **Application e-commerce de lutte contre la déforestation** (projet d’équipe pour la soutenance du titre pro)
+
+Authentification complète, espace utilisateur, tunnel de commande, suivi des plantations, emails de confirmation.
+
+**Techs:** React, TypeScript, Node.js, PostgreSQL, JWT
+
+➡️ [Voir le projet déployé](https://green-roots.donovan-grout.com/)
+
+-- --
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
+#### [Site professionnel](https://github.com/DonovanGROUT/CV)
+
 📄 **Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.
 
-**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
+**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery, CI/CD Netlify
 
 ➡️ [Voir le projet déployé](https://sitepro-donovangrout.netlify.app/)
+
 
 ---
 
@@ -177,7 +191,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 15:15 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 12:32 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -215,22 +229,24 @@ Passionate about creating high-performance, accessible and eco-designed web solu
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="64" alt="Docker"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="64" alt="Git"/>
   <img src="https://img.icons8.com/office/64/000000/github.png" width="64" alt="GitHub"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="64" alt="Bootstrap"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="64" alt="jQuery"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="64" alt="Symfony"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="64" alt="VS Code"/>
 </div>
 
 ### 💻 Frontend
 
-- **HTML5, CSS3, Tailwind CSS, JQuery**
+- **HTML5, CSS3, Bootstrap, Tailwind CSS, JQuery**
 - **React, Zustand, EJS**
 - **VueJS, Pinia**
-- **Responsive Design**
+- **Responsive Design, UI/UX**
 - **Design: graphic charters, wireframes, graphic models**
 
 ### 🖥️ Backend/Database
 
-- **Node.js, Express**
-- **RESTful API**
-- **PHP, Symfony**
-- **PostgreSQL, Sequelize**
+- **PHP, Symfony, Node.js, Express, RESTful API**
+- **MySQL, PostgreSQL, Sequelize**
 - **Modeling: Data Conceptual Model, Logical/Physical Data Models, data dictionary**
 
 ### 🏗️ Architecture
@@ -244,6 +260,12 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 - **DRY**
 - **State management**
 - **Git best practices (branches, PR, code review)**
+- **Accessibility (WCAG, ARIA)**
+- **Web quality (Opquast, score 900/1000)**
+
+### 🔧 Tools & Methodologies
+- **Git / GitHub, VS Code, Docker, GitHub Actions**
+- **TDD, CI/CD, Agile (Scrum, Kanban)**
 
 ### 🔒 Security
 
@@ -252,6 +274,7 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 - **Input validation**
 - **Protection against XSS, CSRF, SQL injections**
 - **CSP**
+- **ANSSI IT security training (2024)**
 
 ### ♿ Accessibility
 
@@ -265,15 +288,10 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 - **Lightweight technologies**
 - **Reducing carbon footprint**
 
-### 📅 Methodologies
-
-- **Agile (Scrum, Kanban)**
-- **Watch : CI/CD, TDD**
-
 ## 🔭 Currently
 
-- **I'm working on**: the Val Aubrée stud farm website, the redesign of my portfolio with Next.js in TDD and with a CI/CD pipeline, and Medisys, a simple medical management application to learn how to master Symfony and VueJS.
-- **I'm learning**: TDD, CI/CD, Symfony and VueJS
+- **I'm working on**: the Val Aubrée stud farm website, the redesign of my portfolio with Next.js in TDD and with a CI/CD pipeline, Medisys, a simple medical management application to learn how to master Symfony and VueJS, and setting up an automated freelance stack with n8n
+- **I'm learning**: TDD, CI/CD, Symfony and VueJS, n8n
 
 ## 🌱 Projects & Goals
 
@@ -287,9 +305,9 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 
 **[Medisys](https://github.com/DonovanGROUT/Medisys)** - Created on 2025-06-19
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Symfony 7 + Vue.js learning project - Digital health application
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** HTML, CSS, TypeScript, PHP, Vue.js, Symfony
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
@@ -299,18 +317,32 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2025-10-10
 
-Aucune description disponible
+showcasing my background, skills, and interactive resume.
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
-### 🎨 My other pinned projects
+### 🎨 My other pinned public projects
 
 **[portfolio-v2](https://github.com/DonovanGROUT/portfolio-v2)** - Created on 2025-06-09
 
 Portfolio with Next.js, TypeScript, TDD and CI/CD (under construction)
 
 **Techs:** HTML5, CSS3, JavaScript, TypeScript, Next.js, Shell
+
+-- --
+
+#### GreenRoots
+
+🌱 **E-commerce application to fight deforestation** (team project for professional certification)
+
+Full authentication, user area, order funnel, planting tracking, confirmation emails.
+
+**Tech stack:** React, TypeScript, Node.js, PostgreSQL, JWT
+
+➡️ [See the deployed project](https://green-roots.donovan-grout.com/)
+
+-- --
 
 #### [Portfolio](https://github.com/DonovanGROUT/CV)
 
@@ -322,7 +354,7 @@ Portfolio with Next.js, TypeScript, TDD and CI/CD (under construction)
 
 ➡️ [See deployed project](https://sitepro-donovangrout.netlify.app/)
 
----
+-- --
 
 #### [O-Coffee](https://github.com/DonovanGROUT/O-Coffee)
 
@@ -355,7 +387,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 10/10/2025 15:15 UTC*
+*🔄 This profile is automatically updated - Last update: 10/10/2025 12:32 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
