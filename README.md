@@ -107,7 +107,7 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** HTML, CSS, TypeScript, PHP, Vue.js, Symfony
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
@@ -117,9 +117,9 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2025-10-10
 
-**Site professionnel** présentant mon parcours, mes compétences et mon CV interactif.
+Aucune description disponible
 
-**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery, CI/CD Netlify
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -191,7 +191,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 12:32 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 10/10/2025 18:22 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -305,9 +305,9 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 
 **[Medisys](https://github.com/DonovanGROUT/Medisys)** - Created on 2025-06-19
 
-Symfony 7 + Vue.js learning project - Digital health application
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** HTML, CSS, TypeScript, PHP, Vue.js, Symfony
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
@@ -317,9 +317,9 @@ Symfony 7 + Vue.js learning project - Digital health application
 
 **[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2025-10-10
 
-showcasing my background, skills, and interactive resume.
+Aucune description disponible
 
-**Techs:** HTML5, CSS3, Javascript, Bootstrap, JQuery
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -387,7 +387,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 10/10/2025 12:32 UTC*
+*🔄 This profile is automatically updated - Last update: 10/10/2025 18:22 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
