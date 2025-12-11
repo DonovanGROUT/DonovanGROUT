@@ -15,7 +15,7 @@
 <div align="right"><a href="#english-version">🇬🇧 Switch to English</a></div>
 
 Développeur web full stack, basé à Caen, j'ai obtenu mon titre professionnel **Développeur Web et Web Mobile** en mai 2025 avec les félicitations du jury suite à ma formation O'Clock (2024-2025).
-De nouveaux défis en cours : recherche d'un CDI en développement web, et préparation du lancement de mon activité en tant que micro-entrepreneur freelance.
+Je suis actuellement en préparation du lancement de mon activité en tant que développeur web freelance spécialisé en accessibilité.
 
 ## 🚀 À propos
 
@@ -90,7 +90,7 @@ Passionné par la création de solutions web performantes, accessibles et éco-c
 
 ## 🔭 En ce moment
 
-- **Je travaille sur** : la refonte de mon portfolio avec Next.js en TDD et avec un pipeline CI/CD, Medisys, une application de gestion médicale simple pour apprendre à maîtriser Symfony et VueJS et la mise en place d'une stack freelance automatisée avec n8n.
+- **Je travaille sur** : la refonte de mon portfolio avec Next.js en TDD et avec un pipeline CI/CD et la mise en place d'une stack freelance automatisée avec n8n.
 - **J'apprends** : TDD, CI/CD, Symfony et VueJS, n8n.
 
 ## 🌱 Projets & Objectifs
@@ -208,7 +208,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 <div align="right"><a href="#version-française">🇫🇷 Passer en Français</a></div>
 
 Full stack web developer, based in Caen, I've obtained my **Web and Web Mobile Developer** professional title in May 2025, following my O'Clock training (2024-2025).  
-I'm looking for new challenges: work-study as an Application Developer Designer or a permanent position in web development, and I'm also getting ready to launch my business as a micro-entrepreneur.
+I am currently preparing to launch my business as a freelance web developer specializing in accessibility.
 
 ## 🚀 About
 
@@ -290,7 +290,7 @@ Passionate about creating high-performance, accessible and eco-designed web solu
 
 ## 🔭 Currently
 
-- **I'm working on**: the Val Aubrée stud farm website, the redesign of my portfolio with Next.js in TDD and with a CI/CD pipeline, Medisys, a simple medical management application to learn how to master Symfony and VueJS, and setting up an automated freelance stack with n8n
+- **I'm working on**: the redesign of my portfolio with Next.js in TDD and with a CI/CD pipeline, and setting up an automated freelance stack with n8n
 - **I'm learning**: TDD, CI/CD, Symfony and VueJS, n8n
 
 ## 🌱 Projects & Goals
