@@ -111,7 +111,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
-### 🛠️ Mon projet le plus récemment mis à jour
+### 🛠️ Mon projet public le plus récemment mis à jour
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
@@ -311,7 +311,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
-### 🛠️ My most recently updated project
+### 🛠️ My most recently updated public project
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
