@@ -113,11 +113,11 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2026-03-11
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-03-12
 
-Aucune description disponible
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
@@ -191,7 +191,7 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 12/03/2026 15:55 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 12/03/2026 18:49 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -313,11 +313,11 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2026-03-11
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-03-12
 
-Aucune description disponible
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
@@ -387,7 +387,7 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 12/03/2026 15:55 UTC*
+*🔄 This profile is automatically updated - Last update: 12/03/2026 18:49 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
