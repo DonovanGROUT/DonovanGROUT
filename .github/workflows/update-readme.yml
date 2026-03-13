@@ -480,11 +480,14 @@ jobs:
         else
           git commit -m "🔄 Auto-update README with latest projects: $(date '+%Y-%m-%d %H:%M')"
 
+          TARGET_BRANCH="${GITHUB_REF_NAME:-main}"
+          echo "🌿 Branche cible: $TARGET_BRANCH"
+
           pushed=0
           for attempt in 1 2 3; do
             echo "🔁 Tentative de push #$attempt"
-            git pull --rebase origin main
-            if git push origin main; then
+            git pull --rebase origin "$TARGET_BRANCH"
+            if git push origin "HEAD:$TARGET_BRANCH"; then
               pushed=1
               break
             fi
