@@ -7,22 +7,32 @@ on:
   workflow_dispatch:
     # Permet l'exécution manuelle
 
+concurrency:
+  group: update-readme
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
       
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
       
     - name: Update README with latest project
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PRIVATE_GITHUB_TOKEN: ${{ secrets.PRIVATE_GITHUB_TOKEN }}
         USERNAME: ${{ github.repository_owner }}
       run: |
         # Variables pour l'horodatage
@@ -155,6 +165,30 @@ jobs:
           echo "Non spécifié"
         }
 
+        # Récupérer la date du dernier push sur un repo privé sans exposer son nom
+        get_last_private_push_date() {
+          if [ -z "$PRIVATE_GITHUB_TOKEN" ]; then
+            >&2 echo "⚠️ PRIVATE_GITHUB_TOKEN non configuré"
+            echo "Non configuré"
+            return 0
+          fi
+
+          graphql_payload='{"query":"query { viewer { repositories(first: 1, privacy: PRIVATE, ownerAffiliations: OWNER, orderBy: {field: PUSHED_AT, direction: DESC}) { nodes { pushedAt } } } }"}'
+
+          private_pushed_at=$(curl -s \
+            -H "Authorization: Bearer $PRIVATE_GITHUB_TOKEN" \
+            -H "Content-Type: application/json" \
+            -X POST \
+            -d "$graphql_payload" \
+            https://api.github.com/graphql | jq -r '.data.viewer.repositories.nodes[0].pushedAt // empty')
+
+          if [ -n "$private_pushed_at" ]; then
+            echo "$private_pushed_at" | cut -d'T' -f1
+          else
+            echo "Aucun push privé détecté"
+          fi
+        }
+
         # Récupérer le dernier repository public (non forké)
         echo "🔍 Récupération du dernier repository public..."
         LATEST_REPO=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
@@ -195,6 +229,10 @@ jobs:
           echo "✅ Repository trouvé: $REPO_NAME"
           echo "🔗 Lien de déploiement trouvé: ${DEPLOY_LINK:-Aucun}"
         fi
+
+        # Dernier push privé (date uniquement)
+        export LAST_PRIVATE_PUSH_DATE=$(get_last_private_push_date)
+        echo "🔐 Dernier push privé: $LAST_PRIVATE_PUSH_DATE"
         
         # Traitement du dernier repository modifié
         if [ "$LATEST_UPDATED_REPO" = "null" ]; then
@@ -289,6 +327,7 @@ jobs:
         updated_repo_forks = os.getenv('UPDATED_REPO_FORKS', '0')
         updated_repo_date = os.getenv('UPDATED_REPO_DATE', 'Unknown')
         updated_deploy_link = os.getenv('UPDATED_DEPLOY_LINK', '')
+        private_push_date = os.getenv('LAST_PRIVATE_PUSH_DATE', 'Non configuré')
         
         # Formatage conditionnel des statistiques
         fr_stats_line = format_stats_line(repo_techs, repo_stars, repo_forks, is_french=True)
@@ -357,6 +396,15 @@ jobs:
         en_timestamp = f"""---
         *🔄 This profile is automatically updated - Last update: {timestamp}*"""
 
+        # Contenu pour l'activité privée (date uniquement)
+        private_fr_content = f"""## 🔐 Activité privée
+
+        Dernier push sur un repository privé : {private_push_date}"""
+
+        private_en_content = f"""## 🔐 Private activity
+
+        Last push on a private repository: {private_push_date}"""
+
         # Mettre à jour chaque section
         print("🔄 Mise à jour de la section française du projet...")
         readme_content = update_section(readme_content, 
@@ -388,11 +436,23 @@ jobs:
             '<!-- AUTO-UPDATE: TIMESTAMP-FR-END -->', 
             fr_timestamp)
 
+        print("🔄 Mise à jour de l'activité privée française...")
+        readme_content = update_section(readme_content,
+          '<!-- AUTO-UPDATE: PRIVATE-PUSH-FR-START -->',
+          '<!-- AUTO-UPDATE: PRIVATE-PUSH-FR-END -->',
+          private_fr_content)
+
         print("🔄 Mise à jour du timestamp anglais...")
         readme_content = update_section(readme_content,
             '<!-- AUTO-UPDATE: TIMESTAMP-EN-START -->',
             '<!-- AUTO-UPDATE: TIMESTAMP-EN-END -->',
             en_timestamp)
+
+        print("🔄 Mise à jour de l'activité privée anglaise...")
+        readme_content = update_section(readme_content,
+          '<!-- AUTO-UPDATE: PRIVATE-PUSH-EN-START -->',
+          '<!-- AUTO-UPDATE: PRIVATE-PUSH-EN-END -->',
+          private_en_content)
 
         # Écrire le nouveau README
         with open('README.md', 'w', encoding='utf-8') as f:
@@ -419,6 +479,25 @@ jobs:
           echo "ℹ️ Aucun changement détecté dans le README"
         else
           git commit -m "🔄 Auto-update README with latest projects: $(date '+%Y-%m-%d %H:%M')"
-          git push
+
+          TARGET_BRANCH="${GITHUB_REF_NAME:-main}"
+          echo "🌿 Branche cible: $TARGET_BRANCH"
+
+          pushed=0
+          for attempt in 1 2 3; do
+            echo "🔁 Tentative de push #$attempt"
+            git pull --rebase origin "$TARGET_BRANCH"
+            if git push origin "HEAD:$TARGET_BRANCH"; then
+              pushed=1
+              break
+            fi
+            echo "⚠️ Push refusé, nouvelle tentative..."
+          done
+
+          if [ "$pushed" -ne 1 ]; then
+            echo "❌ Échec du push après 3 tentatives"
+            exit 1
+          fi
+
           echo "✅ README mis à jour et poussé vers GitHub"
         fi
