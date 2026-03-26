@@ -108,6 +108,8 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
+
+➡️ [Voir le projet déployé](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
@@ -120,6 +122,8 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 Aucune description disponible
 
 **Techs:** CSS, EJS, JavaScript
+
+➡️ [Voir le projet déployé](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -197,7 +201,7 @@ Dernier push sur un repository privé : 2026-03-26
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 26/03/2026 09:57 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 26/03/2026 13:06 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -314,6 +318,8 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
+
+➡️ [See deployed project](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
@@ -326,6 +332,8 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 Aucune description disponible
 
 **Techs:** CSS, EJS, JavaScript
+
+➡️ [See deployed project](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -399,7 +407,7 @@ Last push on a private repository: 2026-03-26
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 26/03/2026 09:57 UTC*
+*🔄 This profile is automatically updated - Last update: 26/03/2026 13:06 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
