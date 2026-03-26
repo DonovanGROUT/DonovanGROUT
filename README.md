@@ -108,22 +108,18 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
-
-➡️ [Voir le projet déployé](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Mis à jour le 2026-03-13
+**[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2026-03-26
 
 Aucune description disponible
 
-**Techs:** CSS, EJS, JavaScript
-
-➡️ [Voir le projet déployé](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -201,7 +197,7 @@ Dernier push sur un repository privé : 2026-03-26
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 26/03/2026 13:06 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 26/03/2026 16:08 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -318,22 +314,18 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 **Techs:** CSS, HTML, JavaScript
-
-➡️ [See deployed project](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Updated on 2026-03-13
+**[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2026-03-26
 
 Aucune description disponible
 
-**Techs:** CSS, EJS, JavaScript
-
-➡️ [See deployed project](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -407,7 +399,7 @@ Last push on a private repository: 2026-03-26
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 26/03/2026 13:06 UTC*
+*🔄 This profile is automatically updated - Last update: 26/03/2026 16:08 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
