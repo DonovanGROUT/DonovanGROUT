@@ -113,11 +113,11 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-03-26
+**[CV](https://github.com/DonovanGROUT/CV)** - Mis à jour le 2026-03-27
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
 **Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
@@ -197,7 +197,7 @@ Dernier push sur un repository privé : 2026-03-27
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 27/03/2026 12:58 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 27/03/2026 15:49 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -319,11 +319,11 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/CV)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-03-26
+**[CV](https://github.com/DonovanGROUT/CV)** - Updated on 2026-03-27
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
 **Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
@@ -399,7 +399,7 @@ Last push on a private repository: 2026-03-27
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 27/03/2026 12:58 UTC*
+*🔄 This profile is automatically updated - Last update: 27/03/2026 15:49 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
