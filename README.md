@@ -113,13 +113,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Mis à jour le 2026-04-06
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-04-08
 
-Aucune description disponible
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, EJS, JavaScript
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -197,7 +197,7 @@ Dernier push sur un repository privé : 2026-04-08
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 08/04/2026 13:13 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 08/04/2026 16:13 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -319,13 +319,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Updated on 2026-04-06
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-04-08
 
-Aucune description disponible
+Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, EJS, JavaScript
+**Techs:** CSS, HTML, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -399,7 +399,7 @@ Last push on a private repository: 2026-04-08
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 08/04/2026 13:13 UTC*
+*🔄 This profile is automatically updated - Last update: 08/04/2026 16:13 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
