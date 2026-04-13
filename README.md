@@ -113,13 +113,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-04-08
+**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Mis à jour le 2026-04-13
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, EJS, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -197,7 +197,7 @@ Dernier push sur un repository privé : 2026-04-13
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 13/04/2026 16:08 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 13/04/2026 19:09 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -319,13 +319,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-04-08
+**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Updated on 2026-04-13
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, EJS, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -399,7 +399,7 @@ Last push on a private repository: 2026-04-13
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 13/04/2026 16:08 UTC*
+*🔄 This profile is automatically updated - Last update: 13/04/2026 19:09 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
