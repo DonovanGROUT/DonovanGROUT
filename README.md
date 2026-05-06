@@ -107,7 +107,7 @@ Retrouvez mes projets épinglés ci-dessous (d'autres arrivent bientôt), et exp
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** message
 <!-- AUTO-UPDATE: LATEST-PROJECT-FR-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
@@ -119,7 +119,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** message
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -192,12 +192,12 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 <!-- AUTO-UPDATE: PRIVATE-PUSH-FR-START -->
 ## 🔐 Activité privée
 
-Dernier push sur un repository privé : 2026-05-04
+Dernier push sur un repository privé : 2026-05-06
 <!-- AUTO-UPDATE: PRIVATE-PUSH-FR-END -->
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 06/05/2026 11:02 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 06/05/2026 14:00 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -313,7 +313,7 @@ Check out my pinned projects below (more coming soon), and explore my repositori
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** message
 <!-- AUTO-UPDATE: LATEST-PROJECT-EN-END -->
 
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
@@ -325,7 +325,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** message
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -394,12 +394,12 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 <!-- AUTO-UPDATE: PRIVATE-PUSH-EN-START -->
 ## 🔐 Private activity
 
-Last push on a private repository: 2026-05-04
+Last push on a private repository: 2026-05-06
 <!-- AUTO-UPDATE: PRIVATE-PUSH-EN-END -->
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 06/05/2026 11:02 UTC*
+*🔄 This profile is automatically updated - Last update: 06/05/2026 14:00 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
