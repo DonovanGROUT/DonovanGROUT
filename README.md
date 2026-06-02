@@ -115,7 +115,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-05-22
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-06-02
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
@@ -197,7 +197,7 @@ Dernier push sur un repository privé : 2026-06-02
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 02/06/2026 10:33 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 02/06/2026 13:17 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -321,7 +321,7 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-05-22
+**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-06-02
 
 Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 
@@ -399,7 +399,7 @@ Last push on a private repository: 2026-06-02
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 02/06/2026 10:33 UTC*
+*🔄 This profile is automatically updated - Last update: 02/06/2026 13:17 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
