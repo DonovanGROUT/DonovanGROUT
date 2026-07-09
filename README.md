@@ -120,6 +120,8 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 Aucune description disponible
 
 **Techs:** CSS, EJS, JavaScript
+
+➡️ [Voir le projet déployé](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -197,7 +199,7 @@ Dernier push sur un repository privé : Aucun push privé détecté
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 08/07/2026 21:25 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 09/07/2026 00:35 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -326,6 +328,8 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 Aucune description disponible
 
 **Techs:** CSS, EJS, JavaScript
+
+➡️ [See deployed project](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -399,7 +403,7 @@ Last push on a private repository: Aucun push privé détecté
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 08/07/2026 21:25 UTC*
+*🔄 This profile is automatically updated - Last update: 09/07/2026 00:35 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
