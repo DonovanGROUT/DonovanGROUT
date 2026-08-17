@@ -113,13 +113,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-START -->
 ### 🛠️ Mon projet le plus récemment mis à jour
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Mis à jour le 2026-08-13
+**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Mis à jour le 2026-08-17
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, EJS, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-FR-END -->
 
 ### 🎨 Mes autres projets publics épinglés
@@ -181,12 +181,12 @@ En dehors du code, je m'entraîne régulièrement à la course à pied 🏃‍�
 <!-- AUTO-UPDATE: PRIVATE-PUSH-FR-START -->
 ## 🔐 Activité privée
 
-Dernier push sur un repository privé : 2026-08-14
+Dernier push sur un repository privé : 2026-08-17
 <!-- AUTO-UPDATE: PRIVATE-PUSH-FR-END -->
 
 <!-- AUTO-UPDATE: TIMESTAMP-FR-START -->
 ---
-*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 17/08/2026 18:07 UTC*
+*🔄 Ce profil est mis à jour automatiquement - Dernière mise à jour : 17/08/2026 21:06 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-FR-END -->
 
 <div align="center">
@@ -308,13 +308,13 @@ Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-START -->
 ### 🛠️ My most recently updated project
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/Medisys)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonovanGROUT/O-Coffee)
 
-**[Medisys](https://github.com/DonovanGROUT/Medisys)** - Updated on 2026-08-13
+**[O-Coffee](https://github.com/DonovanGROUT/O-Coffee)** - Updated on 2026-08-17
 
-Projet d'apprentissage Symfony 7 + Vue.js - Application santé numérique
+Aucune description disponible
 
-**Techs:** CSS, HTML, JavaScript
+**Techs:** CSS, EJS, JavaScript
 <!-- AUTO-UPDATE: LATEST-UPDATED-PROJECT-EN-END -->
 
 ### 🎨 My other pinned public projects
@@ -375,12 +375,12 @@ Outside of coding, I regularly train to run 🏃‍♂️ and enjoy writing fant
 <!-- AUTO-UPDATE: PRIVATE-PUSH-EN-START -->
 ## 🔐 Private activity
 
-Last push on a private repository: 2026-08-14
+Last push on a private repository: 2026-08-17
 <!-- AUTO-UPDATE: PRIVATE-PUSH-EN-END -->
 
 <!-- AUTO-UPDATE: TIMESTAMP-EN-START -->
 ---
-*🔄 This profile is automatically updated - Last update: 17/08/2026 18:07 UTC*
+*🔄 This profile is automatically updated - Last update: 17/08/2026 21:06 UTC*
 <!-- AUTO-UPDATE: TIMESTAMP-EN-END -->
 
 <div align="center">
